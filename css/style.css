@@ -124,7 +124,7 @@ section { margin: 0 0 2rem; scroll-margin-top: 5rem; }
 .section-title { margin-bottom: 1rem; }
 .projects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1rem;
   align-items: stretch;
 }
@@ -158,15 +158,11 @@ footer { text-align: center; color: var(--text-dim); font-size: 0.85rem; padding
 .reveal.visible { opacity: 1; transform: none; }
 
 /* ===== Responsivo / acessibilidade ===== */
-@media (max-width: 860px) {
-  .projects { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 600px) {
   .nav { padding: 0.75rem 1rem; }
   .nav nav { gap: 0.7rem; }
   .nav nav a { font-size: 0.8rem; }
   .card { padding: 1.25rem; }
-  .projects { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
