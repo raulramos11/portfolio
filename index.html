@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raul Ramos — Desenvolvedor de Software</title>
+  <meta name="description" content="Portfólio de Raul Ramos, desenvolvedor de software júnior em Bragança Paulista — Java, Spring Boot, React e IA local.">
+  <meta property="og:title" content="Raul Ramos — Desenvolvedor de Software">
+  <meta property="og:description" content="Java, Spring Boot, React e um laboratório pessoal de IA.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Aplica o tema salvo antes do primeiro paint (evita "piscar").
+    (function () {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#topo">RR<span>.</span></a>
+    <nav aria-label="Seções">
+      <a href="#sobre">sobre</a>
+      <a href="#habilidades">habilidades</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </nav>
+    <button id="theme-toggle" class="icon-btn" type="button" aria-label="Alternar tema claro/escuro">◐</button>
+  </header>
+
+  <main id="topo">
+    <!-- HERO -->
+    <section class="hero reveal">
+      <!-- TODO(foto): troque o bloco .avatar por <img class="avatar" src="img/foto.jpg" alt="Foto de Raul Ramos"> -->
+      <div class="avatar" role="img" aria-label="Iniciais de Raul Ramos">RR</div>
+      <p class="eyebrow">olá, eu sou</p>
+      <h1>RAUL RAMOS</h1>
+      <p class="tagline">Desenvolvedor de Software Júnior · Java, Spring Boot &amp; JavaScript</p>
+      <p class="location">📍 Bragança Paulista — SP</p>
+      <div class="cta">
+        <a class="btn" href="#projetos">ver projetos</a>
+        <a class="btn ghost" href="https://github.com/raulramos11" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <a class="scroll-hint" href="#sobre" aria-label="Rolar para a seção sobre"><span></span></a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="card reveal">
+      <h2>sobre mim</h2>
+      <!-- TODO(sobre): revise este texto com sua voz. -->
+      <p>
+        Sou Raul Ramos Cirilo da Silva, estudante de Análise e Desenvolvimento de Sistemas no IFSP
+        e desenvolvedor focado em back-end com Java e Spring Boot, sem deixar de lado o front-end
+        com React e TypeScript.
+      </p>
+      <p>
+        Já coloquei em produção o site da <strong>Ritmo &amp; Melodia</strong>, uma loja de instrumentos
+        e luthieria aqui de Bragança Paulista. Nas horas vagas, mantenho um laboratório pessoal
+        <em>local-first</em> de IA, onde experimento LLMs rodando na minha máquina, RAG e agentes.
+      </p>
+      <p>Procuro minha primeira oportunidade como júnior ou estágio, presencial na região ou remoto.</p>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="card reveal">
+      <h2>habilidades</h2>
+      <div class="skills">
+        <div>
+          <h3>back-end</h3>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>Python</li></ul>
+        </div>
+        <div>
+          <h3>front-end</h3>
+          <ul class="tags"><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>HTML &amp; CSS</li><li>Tailwind</li></ul>
+        </div>
+        <div>
+          <h3>ia &amp; ferramentas</h3>
+          <ul class="tags"><li>LLMs locais</li><li>RAG</li><li>Agentes</li><li>Git &amp; GitHub</li><li>Docker</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos" class="reveal">
+      <h2 class="section-title">projetos</h2>
+      <div class="projects">
+        <article class="card project featured">
+          <span class="badge">em produção</span>
+          <h3>Ritmo &amp; Melodia</h3>
+          <p>Site oficial de uma loja de instrumentos musicais e luthieria em Bragança Paulista.</p>
+          <ul class="tags small"><li>Next.js</li><li>React</li><li>TypeScript</li><li>Tailwind</li></ul>
+          <div class="links">
+            <a href="https://ritmoemelodia.com" target="_blank" rel="noopener">site ↗</a>
+            <a href="https://github.com/raulramos11/ritmo-e-melodia" target="_blank" rel="noopener">código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>OpenBook</h3>
+          <p>Aplicação web para buscar e organizar livros, com filtros de obras gratuitas, pagas ou a verificar.</p>
+          <ul class="tags small"><li>Web</li><li>Docker</li></ul>
+          <div class="links">
+            <a href="https://github.com/raulramos11/OpenBook" target="_blank" rel="noopener">código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Frater Tattoo Studio</h3>
+          <p>Portfólio demonstrativo para um estúdio de tatuagem em Copacabana.</p>
+          <ul class="tags small"><li>Front-end</li><li>Design</li></ul>
+          <div class="links">
+            <a href="https://github.com/raulramos11/frater-tattoo-studio-demo" target="_blank" rel="noopener">código ↗</a>
+          </div>
+        </article>
+
+        <article class="card project">
+          <h3>Laboratório de IA</h3>
+          <p>Ambiente pessoal local-first para estudar LLMs, RAG e agentes rodando em hardware próprio.</p>
+          <ul class="tags small"><li>LLMs</li><li>RAG</li><li>Agentes</li></ul>
+          <div class="links"><span class="muted">projeto pessoal</span></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="card reveal contact">
+      <h2>contato</h2>
+      <p>Vamos conversar? Estou aberto a vagas júnior, estágio e projetos freelance.</p>
+      <div class="cta">
+        <!-- TODO(email): troque pelo seu e-mail real -->
+        <a class="btn placeholder" href="mailto:seu-email@exemplo.com">✉ seu-email@exemplo.com</a>
+        <!-- TODO(linkedin): troque pela URL real do LinkedIn -->
+        <a class="btn ghost placeholder" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/raulramos11" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Raul Ramos · feito com HTML, CSS e JS puro</p>
+  </footer>
+
+  <script src="js/background.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
