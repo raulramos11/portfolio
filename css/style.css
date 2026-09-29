@@ -141,6 +141,14 @@ section { margin: 0 0 2rem; scroll-margin-top: 5rem; }
   padding: 0.2rem 0.6rem; border-radius: 999px; border: 1px solid var(--card-border); color: var(--text-dim);
 }
 
+/* ===== Centralização global ===== */
+main section { text-align: center; }
+.skills { justify-items: center; }
+.skills .tags { justify-content: center; }
+.project { align-items: center; text-align: center; }
+.project .links { justify-content: center; }
+.badge { align-self: center; }
+
 /* ===== Contato / rodapé ===== */
 .contact { text-align: center; }
 footer { text-align: center; color: var(--text-dim); font-size: 0.85rem; padding: 2rem 1rem 3rem; }
